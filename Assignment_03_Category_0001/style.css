@@ -1,0 +1,17 @@
+ .font-sora {
+        font-family: "Sora", serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1rem;
+      }
+
+ .font-adlam {
+        font-family: "ADLaM Display", serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+
+  * {
+        margin: 0;
+        padding: 0;
+      }    
