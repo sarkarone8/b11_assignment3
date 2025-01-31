@@ -1,28 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pet Shop</title>
-  <link rel="stylesheet" href="style.css">
+  <title> Pet store</title>
+  <link rel="icon" type="image/x-icon" href="c1-assets/logo-header.png">
   <script src="https://kit.fontawesome.com/5858bd8c6d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet" />
-  <link rel="icon" type="logo" href="c1-assets/logo-header.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-  <header>
+  <section class="font-sora md:px-20">
+    <div class="navbar bg-[#FFF9F4]">
+      <div class="navbar-start space-x-3">
+        <img src="c1-assets/logo-header.png" alt="" />
+        <div class="hidden sm:block">
+          <a class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Find a Pet</a></li>
+          <li><a>Breeds</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end space-x-5 hidden md:flex">
+        <div class="space-x-2">
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="space-x-1">
+          <a class="btn btn-outline border-[#FFDC26]">Login</a>
+          <a class="btn btn-warning bg-[#FFDC26] border-none">Register</a>
+        </div>
+      </div>
+      <div class="flex ml-auto">
+        <div class="block md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <div class="block md:hidden">
+      <hr />
+    </div>
+  </section>
 
-  </header>
-<main>
 
-</main>
-   <footer>
-
-   </footer>  
 </body>
+
 </html>
